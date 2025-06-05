@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables
+.env
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional lock files (usa solo uno: package-lock.json o yarn.lock)
+package-lock.json
+yarn.lock
