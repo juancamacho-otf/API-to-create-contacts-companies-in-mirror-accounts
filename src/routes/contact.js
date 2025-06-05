@@ -31,6 +31,7 @@ router.post('/sync', async (req, res, next) => {
       }],
       properties: ['character_id']
     });
+  console.log('Respuesta contactSearch:', contactSearch);
 
     let mirrorContactId = null;
     if (contactSearch.body.results.length > 0) {
