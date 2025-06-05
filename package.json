@@ -4,7 +4,7 @@
   "description": "API to create contacts, companies in mirror accounts",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node ./src/index.js"
   },
     "dependencies": {
     "@hubspot/api-client": "^11.0.1"
