@@ -4,8 +4,8 @@ const router = express.Router();
 const hubspot = require('@hubspot/api-client');
 
 // Inicializamos los clientes para ambas cuentas
-const hubspotMain = new hubspot.Client({ accessToken: HUBSPOT_TOKEN.MAIN });
-const hubspotMirror = new hubspot.Client({ accessToken: HUBSPOT_TOKEN.MIRROW });
+const hubspotMain = new hubspot.Client({ accessToken: process.env.HUBSPOT_TOKEN_MAIN });
+const hubspotMirror = new hubspot.Client({ accessToken: process.env.HUBSPOT_TOKEN_MIRROW });
 
 // 🔄 Ruta para sincronizar contacto
 router.post('/sync', async (req, res, next) => {
