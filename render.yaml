@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: hubspot-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: HUBSPOT_TOKEN
+        sync: false
